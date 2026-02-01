@@ -11,7 +11,7 @@ export default function Button( { label, theme }: Props ){
     return (
       <View style={[
         styles.buttonContainer,
-        {borderWidth:4, borderColor:"#ffd33d", borderRadius: 18},
+        {borderWidth:4, borderColor:"#ebdcab", borderRadius: 18},
       ]}>
         <Pressable
           style={[styles.button, {backgroundColor:"#fff"}]}
