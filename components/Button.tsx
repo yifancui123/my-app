@@ -1,7 +1,6 @@
 import { FontAwesome } from '@expo/vector-icons';
 import { Pressable, StyleSheet, View, Text} from 'react-native';
 
-
 type Props = {
   label: string;
   theme?: "primary"

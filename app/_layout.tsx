@@ -6,7 +6,7 @@ LogBox.ignoreAllLogs(true);
 
 export default function RootLayout() {
   return (
-    <>    
+    <>
       <StatusBar style="dark"/>
       <Stack >
 
@@ -15,5 +15,5 @@ export default function RootLayout() {
         <Stack.Screen name="+not-found" options={{}}/>
 
       </Stack>
-     </>);
+    </>);
 }
