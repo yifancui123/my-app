@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { Alert, StyleSheet, Text, View } from "react-native";
 
 interface Task {
   id: string;
@@ -32,6 +32,20 @@ export default function AboutScreen() {
     setTasks([addNewTask, ...tasks]);
     setTaskName("");
     setDescription("");
+  }
+
+  function handleDelete(id: string) {
+    Alert.alert("Delete Task", "Are you sure you want to delete this task?", [
+      { text: "Cancel", style: "Cancel" },
+      {
+        text: "Delete",
+        style: "destructive",
+        onPress: () => {
+          const remainingTasks = tasks.filter((task: Task) => task.id !== id);
+          setTasks(remainingTasks);
+        },
+      },
+    ]);
   }
 
   return (
