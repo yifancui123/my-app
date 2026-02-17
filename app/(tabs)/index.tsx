@@ -1,55 +1,55 @@
-import { Text, View, StyleSheet} from 'react-native';
-import ImageViewer from '@/components/ImageViewer';
-import Button from '@/components/Button';
+import Button from "@/components/Button";
+import ImageViewer from "@/components/ImageViewer";
+import { StyleSheet, Text, View } from "react-native";
 
 const imageHolder = require("../../assets/images/cute-png-16630.png");
 
 export default function Index() {
   return (
     <View style={styles.container}>
-      <View style = {styles.textContainer}>
-        <Text style={styles.text}>Hello, welcome to my practice app.</Text>
-      </View >
-
       <View style={styles.imageContainer}>
-        <ImageViewer imgSrc = {imageHolder}/>
+        <ImageViewer imgSrc={imageHolder} />
+      </View>
+
+      <View style={styles.textContainer}>
+        <Text style={styles.text}>Welcome to TODO app</Text>
       </View>
 
       <View style={styles.footerContainer}>
-        <Button label="Choose a photo" theme="primary"/>
+        <Button label="" theme="primary" />
       </View>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  container:{
+  container: {
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor:"#25292e",
+    backgroundColor: "#3e3f42",
   },
 
-  text:{
+  text: {
     color: "white",
-    fontWeight:"bold",
+    fontWeight: "bold",
     fontSize: 18,
   },
 
-  textContainer:{
-    flex:0.3,
+  textContainer: {
+    flex: 0.3,
     justifyContent: "center",
     alignItems: "center",
   },
 
-  imageContainer:{
-    flex:0.8,
+  imageContainer: {
+    flex: 0.8,
     justifyContent: "center",
     alignItems: "center",
   },
 
-  footerContainer:{
-    flex: 1/3,
-    alignItems:"center",
-  }
+  footerContainer: {
+    flex: 1 / 3,
+    alignItems: "center",
+  },
 });
