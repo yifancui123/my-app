@@ -36,7 +36,7 @@ export default function AboutScreen() {
 
   function handleDelete(id: string) {
     Alert.alert("Delete Task", "Are you sure you want to delete this task?", [
-      { text: "Cancel", style: "Cancel" },
+      { text: "Cancel", style: "cancel" },
       {
         text: "Delete",
         style: "destructive",
